@@ -1,0 +1,821 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01D194D61CED04D100D62373 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D194D21CED043F00D62373 /* libxml2.tbd */; };
+		0F08CB7CEA36C5BE11FCFC6E /* libPods-SimplePictureClientTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4421BDA468C24D0DB07519F /* libPods-SimplePictureClientTests.a */; };
+		1C1F362DB986C82EF9C247EF /* libPods-SimplePictureClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E84BB34F222C429301998C /* libPods-SimplePictureClient.a */; };
+		99701DBD1CE8A58000565F63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99701DBC1CE8A58000565F63 /* main.m */; };
+		99701DC01CE8A58000565F63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99701DBF1CE8A58000565F63 /* AppDelegate.m */; };
+		99701DC61CE8A58000565F63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99701DC41CE8A58000565F63 /* Main.storyboard */; };
+		99701DC81CE8A58000565F63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99701DC71CE8A58000565F63 /* Assets.xcassets */; };
+		99701DCB1CE8A58000565F63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99701DC91CE8A58000565F63 /* LaunchScreen.storyboard */; };
+		99701DD61CE8A58000565F63 /* SimplePictureClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99701DD51CE8A58000565F63 /* SimplePictureClientTests.m */; };
+		99701DF41CE8A69000565F63 /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99701DF31CE8A69000565F63 /* PictureViewController.m */; };
+		99AE2F3A1CEB237900514961 /* PictureModuleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AE2F391CEB237900514961 /* PictureModuleFactory.m */; };
+		99AE2F3B1CEC5CE200514961 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99701DC41CE8A58000565F63 /* Main.storyboard */; };
+		99AE2F3C1CEC5D1900514961 /* Picture.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C9DA1C1CEB0C03001473F0 /* Picture.m */; };
+		99AE2F3E1CEC5D5900514961 /* PictureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AE2F3D1CEC5D5900514961 /* PictureTests.m */; };
+		99AE2F3F1CEC5E5600514961 /* ImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C59C671CE9ABDF00EF80C1 /* ImageLoader.m */; };
+		99AE2F411CEC5E7B00514961 /* ImageLoaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AE2F401CEC5E7B00514961 /* ImageLoaderTests.m */; };
+		99AE2F431CEC655200514961 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99AE2F421CEC655200514961 /* libOCMock.a */; };
+		99AE2F451CEC673E00514961 /* libOHHTTPStubs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99AE2F441CEC673E00514961 /* libOHHTTPStubs.a */; };
+		99AE2F4E1CEC9DD800514961 /* PictureXMLParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AE2F4D1CEC9DD800514961 /* PictureXMLParserTests.m */; };
+		99AE2F501CEC9F9600514961 /* PictureServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99AE2F4F1CEC9F9600514961 /* PictureServiceTests.m */; };
+		99AE2F561CECCE3400514961 /* PictureXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F62E3A1CE98DD100AE6C31 /* PictureXMLParser.m */; };
+		99AE2F571CECCE3800514961 /* PictureService.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F62E2B1CE8BF9C00AE6C31 /* PictureService.m */; };
+		99C59C681CE9ABDF00EF80C1 /* ImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C59C671CE9ABDF00EF80C1 /* ImageLoader.m */; };
+		99C9DA181CEAFF6C001473F0 /* CustomToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C9DA171CEAFF6C001473F0 /* CustomToast.m */; };
+		99C9DA1D1CEB0C03001473F0 /* Picture.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C9DA1C1CEB0C03001473F0 /* Picture.m */; };
+		99F62E1E1CE8B2C200AE6C31 /* PicturePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F62E1D1CE8B2C200AE6C31 /* PicturePresenter.m */; };
+		99F62E221CE8B46D00AE6C31 /* PictureRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F62E211CE8B46D00AE6C31 /* PictureRouter.m */; };
+		99F62E261CE8B73C00AE6C31 /* PictureInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F62E251CE8B73C00AE6C31 /* PictureInteractor.m */; };
+		99F62E2C1CE8BF9C00AE6C31 /* PictureService.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F62E2B1CE8BF9C00AE6C31 /* PictureService.m */; };
+		99F62E321CE8CED900AE6C31 /* PictureAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F62E311CE8CED900AE6C31 /* PictureAssembly.m */; };
+		99F62E371CE8FDB600AE6C31 /* GDataXMLElement+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F62E361CE8FDB600AE6C31 /* GDataXMLElement+Additional.m */; };
+		99F62E3B1CE98DD100AE6C31 /* PictureXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F62E3A1CE98DD100AE6C31 /* PictureXMLParser.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99701DD21CE8A58000565F63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99701DB01CE8A58000565F63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99701DB71CE8A58000565F63;
+			remoteInfo = SimplePictureClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01D194D01CED041D00D62373 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		01D194D21CED043F00D62373 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		93CF1B4A785259EBA81A10D7 /* Pods-SimplePictureClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePictureClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimplePictureClient/Pods-SimplePictureClient.release.xcconfig"; sourceTree = "<group>"; };
+		99701DB81CE8A58000565F63 /* SimplePictureClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimplePictureClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99701DBC1CE8A58000565F63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		99701DBE1CE8A58000565F63 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		99701DBF1CE8A58000565F63 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		99701DC51CE8A58000565F63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		99701DC71CE8A58000565F63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99701DCA1CE8A58000565F63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		99701DCC1CE8A58000565F63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99701DD11CE8A58000565F63 /* SimplePictureClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimplePictureClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99701DD51CE8A58000565F63 /* SimplePictureClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimplePictureClientTests.m; sourceTree = "<group>"; };
+		99701DD71CE8A58000565F63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99701DF21CE8A69000565F63 /* PictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PictureViewController.h; path = Modules/PictureModule/View/PictureViewController.h; sourceTree = "<group>"; };
+		99701DF31CE8A69000565F63 /* PictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PictureViewController.m; path = Modules/PictureModule/View/PictureViewController.m; sourceTree = "<group>"; };
+		99701DF51CE8A7BC00565F63 /* PictureViewInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PictureViewInput.h; path = Modules/PictureModule/View/PictureViewInput.h; sourceTree = "<group>"; };
+		99701DF61CE8A7DD00565F63 /* PictureViewOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PictureViewOutput.h; path = Modules/PictureModule/View/PictureViewOutput.h; sourceTree = "<group>"; };
+		99AE2F381CEB237900514961 /* PictureModuleFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PictureModuleFactory.h; path = Modules/PictureModule/Assembly/PictureModuleFactory.h; sourceTree = "<group>"; };
+		99AE2F391CEB237900514961 /* PictureModuleFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PictureModuleFactory.m; path = Modules/PictureModule/Assembly/PictureModuleFactory.m; sourceTree = "<group>"; };
+		99AE2F3D1CEC5D5900514961 /* PictureTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureTests.m; sourceTree = "<group>"; };
+		99AE2F401CEC5E7B00514961 /* ImageLoaderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageLoaderTests.m; sourceTree = "<group>"; };
+		99AE2F421CEC655200514961 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = "Pods/../build/Debug-iphoneos/libOCMock.a"; sourceTree = "<group>"; };
+		99AE2F441CEC673E00514961 /* libOHHTTPStubs.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOHHTTPStubs.a; path = "Pods/../build/Debug-iphoneos/libOHHTTPStubs.a"; sourceTree = "<group>"; };
+		99AE2F461CEC6CB600514961 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = "Pods/../build/Debug-iphoneos/libOCMock.a"; sourceTree = "<group>"; };
+		99AE2F481CEC6CBC00514961 /* libOHHTTPStubs.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOHHTTPStubs.a; path = "Pods/../build/Debug-iphoneos/libOHHTTPStubs.a"; sourceTree = "<group>"; };
+		99AE2F4D1CEC9DD800514961 /* PictureXMLParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureXMLParserTests.m; sourceTree = "<group>"; };
+		99AE2F4F1CEC9F9600514961 /* PictureServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureServiceTests.m; sourceTree = "<group>"; };
+		99C59C661CE9ABDF00EF80C1 /* ImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageLoader.h; path = Modules/PictureModule/Helpers/ImageCreator/ImageLoader.h; sourceTree = "<group>"; };
+		99C59C671CE9ABDF00EF80C1 /* ImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageLoader.m; path = Modules/PictureModule/Helpers/ImageCreator/ImageLoader.m; sourceTree = "<group>"; };
+		99C9DA161CEAFF6C001473F0 /* CustomToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomToast.h; path = Modules/PictureModule/Helpers/CustomToast/CustomToast.h; sourceTree = "<group>"; };
+		99C9DA171CEAFF6C001473F0 /* CustomToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomToast.m; path = Modules/PictureModule/Helpers/CustomToast/CustomToast.m; sourceTree = "<group>"; };
+		99C9DA1B1CEB0C03001473F0 /* Picture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Picture.h; path = Modules/PictureModule/Model/Picture.h; sourceTree = "<group>"; };
+		99C9DA1C1CEB0C03001473F0 /* Picture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Picture.m; path = Modules/PictureModule/Model/Picture.m; sourceTree = "<group>"; };
+		99F62E1C1CE8B2C200AE6C31 /* PicturePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PicturePresenter.h; path = Modules/PictureModule/Presenter/PicturePresenter.h; sourceTree = "<group>"; };
+		99F62E1D1CE8B2C200AE6C31 /* PicturePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PicturePresenter.m; path = Modules/PictureModule/Presenter/PicturePresenter.m; sourceTree = "<group>"; };
+		99F62E201CE8B46D00AE6C31 /* PictureRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PictureRouter.h; path = Modules/PictureModule/Router/PictureRouter.h; sourceTree = "<group>"; };
+		99F62E211CE8B46D00AE6C31 /* PictureRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PictureRouter.m; path = Modules/PictureModule/Router/PictureRouter.m; sourceTree = "<group>"; };
+		99F62E241CE8B73C00AE6C31 /* PictureInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PictureInteractor.h; path = Modules/PictureModule/Interactor/PictureInteractor.h; sourceTree = "<group>"; };
+		99F62E251CE8B73C00AE6C31 /* PictureInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PictureInteractor.m; path = Modules/PictureModule/Interactor/PictureInteractor.m; sourceTree = "<group>"; };
+		99F62E271CE8B77400AE6C31 /* PictureInteractorInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PictureInteractorInput.h; path = Modules/PictureModule/Interactor/PictureInteractorInput.h; sourceTree = "<group>"; };
+		99F62E281CE8B78B00AE6C31 /* PictureInteractorOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PictureInteractorOutput.h; path = Modules/PictureModule/Interactor/PictureInteractorOutput.h; sourceTree = "<group>"; };
+		99F62E2A1CE8BF9C00AE6C31 /* PictureService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PictureService.h; path = Modules/PictureModule/Service/PictureService.h; sourceTree = "<group>"; };
+		99F62E2B1CE8BF9C00AE6C31 /* PictureService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PictureService.m; path = Modules/PictureModule/Service/PictureService.m; sourceTree = "<group>"; };
+		99F62E2D1CE8C03100AE6C31 /* PictureServiceInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PictureServiceInput.h; path = Modules/PictureModule/Service/PictureServiceInput.h; sourceTree = "<group>"; };
+		99F62E2E1CE8C04B00AE6C31 /* PictureServiceOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PictureServiceOutput.h; path = Modules/PictureModule/Service/PictureServiceOutput.h; sourceTree = "<group>"; };
+		99F62E301CE8CED900AE6C31 /* PictureAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PictureAssembly.h; path = Modules/PictureModule/Assembly/PictureAssembly.h; sourceTree = "<group>"; };
+		99F62E311CE8CED900AE6C31 /* PictureAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PictureAssembly.m; path = Modules/PictureModule/Assembly/PictureAssembly.m; sourceTree = "<group>"; };
+		99F62E351CE8FDB600AE6C31 /* GDataXMLElement+Additional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GDataXMLElement+Additional.h"; path = "Modules/PictureModule/Helpers/GDataXMLElement+Additional/GDataXMLElement+Additional.h"; sourceTree = "<group>"; };
+		99F62E361CE8FDB600AE6C31 /* GDataXMLElement+Additional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "GDataXMLElement+Additional.m"; path = "Modules/PictureModule/Helpers/GDataXMLElement+Additional/GDataXMLElement+Additional.m"; sourceTree = "<group>"; };
+		99F62E391CE98DD100AE6C31 /* PictureXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PictureXMLParser.h; path = Modules/PictureModule/Helpers/Parser/PictureXMLParser.h; sourceTree = "<group>"; };
+		99F62E3A1CE98DD100AE6C31 /* PictureXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PictureXMLParser.m; path = Modules/PictureModule/Helpers/Parser/PictureXMLParser.m; sourceTree = "<group>"; };
+		BA1B037C1DBED9EAD0131C37 /* Pods-SimplePictureClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePictureClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimplePictureClient/Pods-SimplePictureClient.debug.xcconfig"; sourceTree = "<group>"; };
+		C9950667B2EB6347EC0EE76E /* Pods-SimplePictureClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePictureClientTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimplePictureClientTests/Pods-SimplePictureClientTests.release.xcconfig"; sourceTree = "<group>"; };
+		D2E84BB34F222C429301998C /* libPods-SimplePictureClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimplePictureClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA2E0E050E0FEF0F718489D3 /* Pods-SimplePictureClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePictureClientTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimplePictureClientTests/Pods-SimplePictureClientTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F4421BDA468C24D0DB07519F /* libPods-SimplePictureClientTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimplePictureClientTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99701DB51CE8A58000565F63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C1F362DB986C82EF9C247EF /* libPods-SimplePictureClient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99701DCE1CE8A58000565F63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D194D61CED04D100D62373 /* libxml2.tbd in Frameworks */,
+				99AE2F451CEC673E00514961 /* libOHHTTPStubs.a in Frameworks */,
+				99AE2F431CEC655200514961 /* libOCMock.a in Frameworks */,
+				0F08CB7CEA36C5BE11FCFC6E /* libPods-SimplePictureClientTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65E66025CA2BF0B69101A9E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA2E0E050E0FEF0F718489D3 /* Pods-SimplePictureClientTests.debug.xcconfig */,
+				C9950667B2EB6347EC0EE76E /* Pods-SimplePictureClientTests.release.xcconfig */,
+				BA1B037C1DBED9EAD0131C37 /* Pods-SimplePictureClient.debug.xcconfig */,
+				93CF1B4A785259EBA81A10D7 /* Pods-SimplePictureClient.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		99701DAF1CE8A58000565F63 = {
+			isa = PBXGroup;
+			children = (
+				99701DBA1CE8A58000565F63 /* SimplePictureClient */,
+				99701DD41CE8A58000565F63 /* SimplePictureClientTests */,
+				99701DB91CE8A58000565F63 /* Products */,
+				D561322AC44E2C258D1AA164 /* Frameworks */,
+				65E66025CA2BF0B69101A9E8 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		99701DB91CE8A58000565F63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99701DB81CE8A58000565F63 /* SimplePictureClient.app */,
+				99701DD11CE8A58000565F63 /* SimplePictureClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99701DBA1CE8A58000565F63 /* SimplePictureClient */ = {
+			isa = PBXGroup;
+			children = (
+				99701DEE1CE8A5D100565F63 /* AppDelegate */,
+				99F62E331CE8FD2000AE6C31 /* Helpers */,
+				99701DEF1CE8A5F200565F63 /* Modules */,
+				99701DC41CE8A58000565F63 /* Main.storyboard */,
+				99701DC71CE8A58000565F63 /* Assets.xcassets */,
+				99701DC91CE8A58000565F63 /* LaunchScreen.storyboard */,
+				99701DCC1CE8A58000565F63 /* Info.plist */,
+				99701DBB1CE8A58000565F63 /* Supporting Files */,
+			);
+			path = SimplePictureClient;
+			sourceTree = "<group>";
+		};
+		99701DBB1CE8A58000565F63 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				99701DBC1CE8A58000565F63 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		99701DD41CE8A58000565F63 /* SimplePictureClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				99701DD71CE8A58000565F63 /* Info.plist */,
+				99701DD51CE8A58000565F63 /* SimplePictureClientTests.m */,
+				99AE2F3D1CEC5D5900514961 /* PictureTests.m */,
+				99AE2F401CEC5E7B00514961 /* ImageLoaderTests.m */,
+				99AE2F4D1CEC9DD800514961 /* PictureXMLParserTests.m */,
+				99AE2F4F1CEC9F9600514961 /* PictureServiceTests.m */,
+			);
+			path = SimplePictureClientTests;
+			sourceTree = "<group>";
+		};
+		99701DEE1CE8A5D100565F63 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				99701DBE1CE8A58000565F63 /* AppDelegate.h */,
+				99701DBF1CE8A58000565F63 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		99701DEF1CE8A5F200565F63 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				99701DF01CE8A61F00565F63 /* PictureModule */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		99701DF01CE8A61F00565F63 /* PictureModule */ = {
+			isa = PBXGroup;
+			children = (
+				99C9DA191CEB0BAB001473F0 /* Model */,
+				99F62E2F1CE8CEB200AE6C31 /* Assembly */,
+				99F62E291CE8BF6D00AE6C31 /* Service */,
+				99F62E231CE8B71300AE6C31 /* Interactor */,
+				99F62E1F1CE8B44600AE6C31 /* Router */,
+				99F62E1B1CE8B27100AE6C31 /* Presenter */,
+				99701DF11CE8A64600565F63 /* View */,
+			);
+			name = PictureModule;
+			sourceTree = "<group>";
+		};
+		99701DF11CE8A64600565F63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				99701DF21CE8A69000565F63 /* PictureViewController.h */,
+				99701DF31CE8A69000565F63 /* PictureViewController.m */,
+				99701DF51CE8A7BC00565F63 /* PictureViewInput.h */,
+				99701DF61CE8A7DD00565F63 /* PictureViewOutput.h */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		99C59C651CE9ABB300EF80C1 /* ImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				99C59C661CE9ABDF00EF80C1 /* ImageLoader.h */,
+				99C59C671CE9ABDF00EF80C1 /* ImageLoader.m */,
+			);
+			name = ImageLoader;
+			sourceTree = "<group>";
+		};
+		99C9DA151CEAFF42001473F0 /* CustomToast */ = {
+			isa = PBXGroup;
+			children = (
+				99C9DA161CEAFF6C001473F0 /* CustomToast.h */,
+				99C9DA171CEAFF6C001473F0 /* CustomToast.m */,
+			);
+			name = CustomToast;
+			sourceTree = "<group>";
+		};
+		99C9DA191CEB0BAB001473F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				99C9DA1B1CEB0C03001473F0 /* Picture.h */,
+				99C9DA1C1CEB0C03001473F0 /* Picture.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		99F62E1B1CE8B27100AE6C31 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				99F62E1C1CE8B2C200AE6C31 /* PicturePresenter.h */,
+				99F62E1D1CE8B2C200AE6C31 /* PicturePresenter.m */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		99F62E1F1CE8B44600AE6C31 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				99F62E201CE8B46D00AE6C31 /* PictureRouter.h */,
+				99F62E211CE8B46D00AE6C31 /* PictureRouter.m */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		99F62E231CE8B71300AE6C31 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				99F62E241CE8B73C00AE6C31 /* PictureInteractor.h */,
+				99F62E251CE8B73C00AE6C31 /* PictureInteractor.m */,
+				99F62E271CE8B77400AE6C31 /* PictureInteractorInput.h */,
+				99F62E281CE8B78B00AE6C31 /* PictureInteractorOutput.h */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		99F62E291CE8BF6D00AE6C31 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				99F62E2A1CE8BF9C00AE6C31 /* PictureService.h */,
+				99F62E2B1CE8BF9C00AE6C31 /* PictureService.m */,
+				99F62E2D1CE8C03100AE6C31 /* PictureServiceInput.h */,
+				99F62E2E1CE8C04B00AE6C31 /* PictureServiceOutput.h */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		99F62E2F1CE8CEB200AE6C31 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				99F62E301CE8CED900AE6C31 /* PictureAssembly.h */,
+				99F62E311CE8CED900AE6C31 /* PictureAssembly.m */,
+				99AE2F381CEB237900514961 /* PictureModuleFactory.h */,
+				99AE2F391CEB237900514961 /* PictureModuleFactory.m */,
+			);
+			name = Assembly;
+			sourceTree = "<group>";
+		};
+		99F62E331CE8FD2000AE6C31 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				99C9DA151CEAFF42001473F0 /* CustomToast */,
+				99C59C651CE9ABB300EF80C1 /* ImageLoader */,
+				99F62E381CE98D9E00AE6C31 /* Parser */,
+				99F62E341CE8FD7000AE6C31 /* GDataXMLElement+Additional */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		99F62E341CE8FD7000AE6C31 /* GDataXMLElement+Additional */ = {
+			isa = PBXGroup;
+			children = (
+				99F62E351CE8FDB600AE6C31 /* GDataXMLElement+Additional.h */,
+				99F62E361CE8FDB600AE6C31 /* GDataXMLElement+Additional.m */,
+			);
+			name = "GDataXMLElement+Additional";
+			sourceTree = "<group>";
+		};
+		99F62E381CE98D9E00AE6C31 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				99F62E391CE98DD100AE6C31 /* PictureXMLParser.h */,
+				99F62E3A1CE98DD100AE6C31 /* PictureXMLParser.m */,
+			);
+			name = Parser;
+			sourceTree = "<group>";
+		};
+		D561322AC44E2C258D1AA164 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01D194D21CED043F00D62373 /* libxml2.tbd */,
+				01D194D01CED041D00D62373 /* libxml2.2.tbd */,
+				99AE2F481CEC6CBC00514961 /* libOHHTTPStubs.a */,
+				99AE2F461CEC6CB600514961 /* libOCMock.a */,
+				99AE2F441CEC673E00514961 /* libOHHTTPStubs.a */,
+				99AE2F421CEC655200514961 /* libOCMock.a */,
+				F4421BDA468C24D0DB07519F /* libPods-SimplePictureClientTests.a */,
+				D2E84BB34F222C429301998C /* libPods-SimplePictureClient.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99701DB71CE8A58000565F63 /* SimplePictureClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99701DE51CE8A58000565F63 /* Build configuration list for PBXNativeTarget "SimplePictureClient" */;
+			buildPhases = (
+				C990CCD1B824A8121D0E7C46 /* 📦 Check Pods Manifest.lock */,
+				99701DB41CE8A58000565F63 /* Sources */,
+				99701DB51CE8A58000565F63 /* Frameworks */,
+				99701DB61CE8A58000565F63 /* Resources */,
+				BA4CF2A370A260175DA33DB6 /* 📦 Embed Pods Frameworks */,
+				B8851442514D496D0BF2FEB5 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimplePictureClient;
+			productName = SimplePictureClient;
+			productReference = 99701DB81CE8A58000565F63 /* SimplePictureClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		99701DD01CE8A58000565F63 /* SimplePictureClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99701DE81CE8A58000565F63 /* Build configuration list for PBXNativeTarget "SimplePictureClientTests" */;
+			buildPhases = (
+				163782C0A4220420B25564D9 /* 📦 Check Pods Manifest.lock */,
+				99701DCD1CE8A58000565F63 /* Sources */,
+				99701DCE1CE8A58000565F63 /* Frameworks */,
+				99701DCF1CE8A58000565F63 /* Resources */,
+				07DF142E6BA601F7D6B8938C /* 📦 Embed Pods Frameworks */,
+				16C03F87E953AF9D233C336B /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99701DD31CE8A58000565F63 /* PBXTargetDependency */,
+			);
+			name = SimplePictureClientTests;
+			productName = SimplePictureClientTests;
+			productReference = 99701DD11CE8A58000565F63 /* SimplePictureClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99701DB01CE8A58000565F63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Ekaterina Trishina";
+				TargetAttributes = {
+					99701DB71CE8A58000565F63 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					99701DD01CE8A58000565F63 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 99701DB31CE8A58000565F63 /* Build configuration list for PBXProject "SimplePictureClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 99701DAF1CE8A58000565F63;
+			productRefGroup = 99701DB91CE8A58000565F63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99701DB71CE8A58000565F63 /* SimplePictureClient */,
+				99701DD01CE8A58000565F63 /* SimplePictureClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99701DB61CE8A58000565F63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99701DCB1CE8A58000565F63 /* LaunchScreen.storyboard in Resources */,
+				99701DC81CE8A58000565F63 /* Assets.xcassets in Resources */,
+				99701DC61CE8A58000565F63 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99701DCF1CE8A58000565F63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99AE2F3B1CEC5CE200514961 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07DF142E6BA601F7D6B8938C /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimplePictureClientTests/Pods-SimplePictureClientTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		163782C0A4220420B25564D9 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		16C03F87E953AF9D233C336B /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimplePictureClientTests/Pods-SimplePictureClientTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8851442514D496D0BF2FEB5 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimplePictureClient/Pods-SimplePictureClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA4CF2A370A260175DA33DB6 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimplePictureClient/Pods-SimplePictureClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C990CCD1B824A8121D0E7C46 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99701DB41CE8A58000565F63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99F62E321CE8CED900AE6C31 /* PictureAssembly.m in Sources */,
+				99F62E2C1CE8BF9C00AE6C31 /* PictureService.m in Sources */,
+				99C9DA181CEAFF6C001473F0 /* CustomToast.m in Sources */,
+				99F62E1E1CE8B2C200AE6C31 /* PicturePresenter.m in Sources */,
+				99F62E371CE8FDB600AE6C31 /* GDataXMLElement+Additional.m in Sources */,
+				99701DC01CE8A58000565F63 /* AppDelegate.m in Sources */,
+				99701DF41CE8A69000565F63 /* PictureViewController.m in Sources */,
+				99F62E261CE8B73C00AE6C31 /* PictureInteractor.m in Sources */,
+				99701DBD1CE8A58000565F63 /* main.m in Sources */,
+				99AE2F3A1CEB237900514961 /* PictureModuleFactory.m in Sources */,
+				99C59C681CE9ABDF00EF80C1 /* ImageLoader.m in Sources */,
+				99F62E221CE8B46D00AE6C31 /* PictureRouter.m in Sources */,
+				99F62E3B1CE98DD100AE6C31 /* PictureXMLParser.m in Sources */,
+				99C9DA1D1CEB0C03001473F0 /* Picture.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99701DCD1CE8A58000565F63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99AE2F3C1CEC5D1900514961 /* Picture.m in Sources */,
+				99AE2F411CEC5E7B00514961 /* ImageLoaderTests.m in Sources */,
+				99AE2F571CECCE3800514961 /* PictureService.m in Sources */,
+				99AE2F501CEC9F9600514961 /* PictureServiceTests.m in Sources */,
+				99701DD61CE8A58000565F63 /* SimplePictureClientTests.m in Sources */,
+				99AE2F4E1CEC9DD800514961 /* PictureXMLParserTests.m in Sources */,
+				99AE2F3F1CEC5E5600514961 /* ImageLoader.m in Sources */,
+				99AE2F3E1CEC5D5900514961 /* PictureTests.m in Sources */,
+				99AE2F561CECCE3400514961 /* PictureXMLParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99701DD31CE8A58000565F63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99701DB71CE8A58000565F63 /* SimplePictureClient */;
+			targetProxy = 99701DD21CE8A58000565F63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		99701DC41CE8A58000565F63 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99701DC51CE8A58000565F63 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		99701DC91CE8A58000565F63 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99701DCA1CE8A58000565F63 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		99701DE31CE8A58000565F63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		99701DE41CE8A58000565F63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99701DE61CE8A58000565F63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA1B037C1DBED9EAD0131C37 /* Pods-SimplePictureClient.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SimplePictureClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = etrishina.SimplePictureClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		99701DE71CE8A58000565F63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93CF1B4A785259EBA81A10D7 /* Pods-SimplePictureClient.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SimplePictureClient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = etrishina.SimplePictureClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		99701DE91CE8A58000565F63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA2E0E050E0FEF0F718489D3 /* Pods-SimplePictureClientTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/GDataXML-HTML\"",
+					"\"${PODS_ROOT}/Headers/Public/OCMock\"",
+					"\"${PODS_ROOT}/Headers/Public/OHHTTPStubs\"",
+					"\"${PODS_ROOT}/Headers/Public/Toast\"",
+					"\"$(SDKROOT)/usr/include/libxml2\"",
+				);
+				INFOPLIST_FILE = SimplePictureClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = etrishina.SimplePictureClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/usr/include $(SRCROOT)/OCMock";
+			};
+			name = Debug;
+		};
+		99701DEA1CE8A58000565F63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9950667B2EB6347EC0EE76E /* Pods-SimplePictureClientTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/GDataXML-HTML\"",
+					"\"${PODS_ROOT}/Headers/Public/OCMock\"",
+					"\"${PODS_ROOT}/Headers/Public/OHHTTPStubs\"",
+					"\"${PODS_ROOT}/Headers/Public/Toast\"",
+					"\"$(SDKROOT)/usr/include/libxml2\"",
+				);
+				INFOPLIST_FILE = SimplePictureClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = etrishina.SimplePictureClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/usr/include $(SRCROOT)/OCMock";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99701DB31CE8A58000565F63 /* Build configuration list for PBXProject "SimplePictureClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99701DE31CE8A58000565F63 /* Debug */,
+				99701DE41CE8A58000565F63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99701DE51CE8A58000565F63 /* Build configuration list for PBXNativeTarget "SimplePictureClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99701DE61CE8A58000565F63 /* Debug */,
+				99701DE71CE8A58000565F63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99701DE81CE8A58000565F63 /* Build configuration list for PBXNativeTarget "SimplePictureClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99701DE91CE8A58000565F63 /* Debug */,
+				99701DEA1CE8A58000565F63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99701DB01CE8A58000565F63 /* Project object */;
+}
