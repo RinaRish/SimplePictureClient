@@ -12,7 +12,6 @@
 @class Picture;
 
 typedef void(^LoadPictureSuccess)(Picture *picture);
-
 typedef void(^LoadPictureFailure)(NSError *error);
 
 /**

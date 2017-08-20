@@ -20,7 +20,6 @@
 @interface PictureInteractor : NSObject <PictureInteractorInput, PictureServiceOutput>
 
 @property (nonatomic, weak) id<PictureInteractorOutput> delegate;
-
 @property (nonatomic, strong) id<PictureServiceInput> pictureService;
 
 @end

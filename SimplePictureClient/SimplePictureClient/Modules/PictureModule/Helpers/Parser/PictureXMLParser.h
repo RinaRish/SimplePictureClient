@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 
 typedef void(^ParseXMLPictureSuccess)(NSString *result);
-
 typedef void(^ParseXMLPictureFailure)(NSError *error);
 
 /**

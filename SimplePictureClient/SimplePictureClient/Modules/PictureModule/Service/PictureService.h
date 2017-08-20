@@ -19,13 +19,9 @@
 @interface PictureService : NSObject <PictureServiceInput>
 
 @property (nonatomic, weak) id<PictureServiceOutput> delegate;
-
 @property (nonatomic, strong) PictureXMLParser *parser;
-
 @property (nonatomic, strong) ImageLoader *loader;
-
 @property (nonatomic, strong) AFURLSessionManager *manager;
-
 @property (nonatomic, copy) NSURLRequest *request;
 
 @end

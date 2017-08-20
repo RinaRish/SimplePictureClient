@@ -39,7 +39,7 @@ static NSString *const kErrorMessage = @"Unknown error occured. Try again later"
     [self.view displayPicture:picture];
 }
 
-#pragma mark - 
+#pragma mark - Private
 
 - (void)askForNewPicture {
     [self.view showLoadingIndicator];

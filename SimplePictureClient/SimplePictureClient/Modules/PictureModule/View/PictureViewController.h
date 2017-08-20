@@ -18,24 +18,9 @@
 
 @interface PictureViewController : UIViewController <PictureViewInput>
 
-/**
- *  Image
- */
 @property (weak, nonatomic) IBOutlet UIImageView *picture;
-
-/**
- *  Loading indicator
- */
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
-
-/**
- *  Link to picture output protocol
- */
 @property (nonatomic, strong) id <PictureViewOutput> output;
-
-/**
- *  Link to toast object
- */
 @property (nonatomic, strong) CustomToast *toast;
 
 @end
