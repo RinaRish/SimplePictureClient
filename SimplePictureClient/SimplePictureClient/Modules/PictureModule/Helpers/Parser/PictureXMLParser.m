@@ -9,6 +9,7 @@
 #import "PictureXMLParser.h"
 #import "GDataXMLNode.h"
 #import "GDataXMLElement+Additional.h"
+#import "GDataXMLParserConstants.h"
 
 @implementation PictureXMLParser
 
@@ -36,14 +37,14 @@
  */
 - (NSString *)parseXMLString:(GDataXMLElement *)rootElement {
     NSString *result = nil;
-    if ([rootElement.name isEqualToString:@"response"]) {
-        NSArray *data = [rootElement elementsForName:@"data"];
+    if ([rootElement.name isEqualToString:GDataXMLResponseKey]) {
+        NSArray *data = [rootElement elementsForName:GDataXMLDataKey];
         for (GDataXMLElement *element in data) {
-            NSArray *images = [element elementsForName:@"images"];
+            NSArray *images = [element elementsForName:GDataXMLImagesKey];
             for (GDataXMLElement *img in images) {
-                NSArray *image = [img elementsForName:@"image"];
+                NSArray *image = [img elementsForName:GDataXMLSingleImageKey];
                 for (GDataXMLElement *url in image) {
-                    result = [url ect_valueForChild:@"url"];
+                    result = [url ect_valueForChild:GDataXMLUrlKey];
                     if (result != nil) {
                         return result;
                     }

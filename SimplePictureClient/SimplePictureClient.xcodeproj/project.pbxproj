@@ -39,6 +39,7 @@
 		99F62E321CE8CED900AE6C31 /* PictureAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F62E311CE8CED900AE6C31 /* PictureAssembly.m */; };
 		99F62E371CE8FDB600AE6C31 /* GDataXMLElement+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F62E361CE8FDB600AE6C31 /* GDataXMLElement+Additional.m */; };
 		99F62E3B1CE98DD100AE6C31 /* PictureXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F62E3A1CE98DD100AE6C31 /* PictureXMLParser.m */; };
+		99F7D71D1F493D740058CD49 /* GDataXMLParserConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F7D71C1F493D740058CD49 /* GDataXMLParserConstants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,8 @@
 		99F62E361CE8FDB600AE6C31 /* GDataXMLElement+Additional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "GDataXMLElement+Additional.m"; path = "Modules/PictureModule/Helpers/GDataXMLElement+Additional/GDataXMLElement+Additional.m"; sourceTree = "<group>"; };
 		99F62E391CE98DD100AE6C31 /* PictureXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PictureXMLParser.h; path = Modules/PictureModule/Helpers/Parser/PictureXMLParser.h; sourceTree = "<group>"; };
 		99F62E3A1CE98DD100AE6C31 /* PictureXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PictureXMLParser.m; path = Modules/PictureModule/Helpers/Parser/PictureXMLParser.m; sourceTree = "<group>"; };
+		99F7D71B1F493D740058CD49 /* GDataXMLParserConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDataXMLParserConstants.h; path = Modules/Constants/GDataXMLParserConstants.h; sourceTree = "<group>"; };
+		99F7D71C1F493D740058CD49 /* GDataXMLParserConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDataXMLParserConstants.m; path = Modules/Constants/GDataXMLParserConstants.m; sourceTree = "<group>"; };
 		BA1B037C1DBED9EAD0131C37 /* Pods-SimplePictureClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePictureClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimplePictureClient/Pods-SimplePictureClient.debug.xcconfig"; sourceTree = "<group>"; };
 		C9950667B2EB6347EC0EE76E /* Pods-SimplePictureClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimplePictureClientTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimplePictureClientTests/Pods-SimplePictureClientTests.release.xcconfig"; sourceTree = "<group>"; };
 		D2E84BB34F222C429301998C /* libPods-SimplePictureClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SimplePictureClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -213,6 +216,7 @@
 		99701DEF1CE8A5F200565F63 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				99F7D71A1F493D220058CD49 /* Constants */,
 				99701DF01CE8A61F00565F63 /* PictureModule */,
 			);
 			name = Modules;
@@ -348,6 +352,15 @@
 				99F62E3A1CE98DD100AE6C31 /* PictureXMLParser.m */,
 			);
 			name = Parser;
+			sourceTree = "<group>";
+		};
+		99F7D71A1F493D220058CD49 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				99F7D71B1F493D740058CD49 /* GDataXMLParserConstants.h */,
+				99F7D71C1F493D740058CD49 /* GDataXMLParserConstants.m */,
+			);
+			name = Constants;
 			sourceTree = "<group>";
 		};
 		D561322AC44E2C258D1AA164 /* Frameworks */ = {
@@ -577,6 +590,7 @@
 				99C59C681CE9ABDF00EF80C1 /* ImageLoader.m in Sources */,
 				99F62E221CE8B46D00AE6C31 /* PictureRouter.m in Sources */,
 				99F62E3B1CE98DD100AE6C31 /* PictureXMLParser.m in Sources */,
+				99F7D71D1F493D740058CD49 /* GDataXMLParserConstants.m in Sources */,
 				99C9DA1D1CEB0C03001473F0 /* Picture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
