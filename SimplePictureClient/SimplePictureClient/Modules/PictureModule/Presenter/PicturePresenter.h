@@ -11,7 +11,7 @@
 #import "PictureInteractorOutput.h"
 
 /**
- *  Layer, содержащий логику для подготовки контекста к отображению and can respond to user input 
+ *  Layer, which prepares content for display and can respond to user input 
  */
 
 @protocol PictureViewInput, PictureInteractorInput;
@@ -19,7 +19,6 @@
 @interface PicturePresenter : NSObject <PictureViewOutput, PictureInteractorOutput>
 
 @property (nonatomic, weak) id<PictureViewInput> view;
-
 @property (nonatomic, strong) id<PictureInteractorInput> interactor;
 
 @end
