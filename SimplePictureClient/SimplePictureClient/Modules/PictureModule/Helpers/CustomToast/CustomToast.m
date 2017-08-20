@@ -14,7 +14,9 @@ static const CGFloat kCustomToastDuration = 3.0;
 @implementation CustomToast
 
 -(void)displayToastWithMessage:(NSString *)message onView:(UIView *)view {
-    [view makeToast:message duration:kCustomToastDuration position:CSToastPositionBottom];
+    [view makeToast:message
+           duration:kCustomToastDuration
+           position:CSToastPositionBottom];
 }
 
 @end
