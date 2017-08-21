@@ -18,8 +18,8 @@
 
 @interface PictureViewController : UIViewController <PictureViewInput>
 
-@property (weak, nonatomic) IBOutlet UIImageView *picture;
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (nonatomic, weak) IBOutlet UIImageView *picture;
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (nonatomic, strong) id <PictureViewOutput> output;
 @property (nonatomic, strong) CustomToast *toast;
 
